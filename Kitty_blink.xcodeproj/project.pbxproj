@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E2A2A8D3273E5BBA00E1648A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A2A8D2273E5BBA00E1648A /* AppDelegate.swift */; };
+		E2A2A8D5273E5BBA00E1648A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A2A8D4273E5BBA00E1648A /* SceneDelegate.swift */; };
+		E2A2A8D7273E5BBA00E1648A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A2A8D6273E5BBA00E1648A /* ViewController.swift */; };
+		E2A2A8DA273E5BBA00E1648A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2A2A8D8273E5BBA00E1648A /* Main.storyboard */; };
+		E2A2A8DC273E5BBC00E1648A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2A2A8DB273E5BBC00E1648A /* Assets.xcassets */; };
+		E2A2A8DF273E5BBC00E1648A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2A2A8DD273E5BBC00E1648A /* LaunchScreen.storyboard */; };
+		E2A2A8EA273E5BBC00E1648A /* Kitty_blinkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A2A8E9273E5BBC00E1648A /* Kitty_blinkTests.swift */; };
+		E2A2A8F5273E5BBC00E1648A /* Kitty_blinkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A2A8F4273E5BBC00E1648A /* Kitty_blinkUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E2A2A8E6273E5BBC00E1648A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E2A2A8C7273E5BBA00E1648A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E2A2A8CE273E5BBA00E1648A;
+			remoteInfo = Kitty_blink;
+		};
+		E2A2A8F1273E5BBC00E1648A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E2A2A8C7273E5BBA00E1648A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E2A2A8CE273E5BBA00E1648A;
+			remoteInfo = Kitty_blink;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E2A2A8CF273E5BBA00E1648A /* Kitty_blink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kitty_blink.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2A2A8D2273E5BBA00E1648A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E2A2A8D4273E5BBA00E1648A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E2A2A8D6273E5BBA00E1648A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E2A2A8D9273E5BBA00E1648A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E2A2A8DB273E5BBC00E1648A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E2A2A8DE273E5BBC00E1648A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E2A2A8E0273E5BBC00E1648A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2A2A8E5273E5BBC00E1648A /* Kitty_blinkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Kitty_blinkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2A2A8E9273E5BBC00E1648A /* Kitty_blinkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kitty_blinkTests.swift; sourceTree = "<group>"; };
+		E2A2A8EB273E5BBC00E1648A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2A2A8F0273E5BBC00E1648A /* Kitty_blinkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Kitty_blinkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2A2A8F4273E5BBC00E1648A /* Kitty_blinkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kitty_blinkUITests.swift; sourceTree = "<group>"; };
+		E2A2A8F6273E5BBC00E1648A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E2A2A8CC273E5BBA00E1648A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2A2A8E2273E5BBC00E1648A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2A2A8ED273E5BBC00E1648A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E2A2A8C6273E5BBA00E1648A = {
+			isa = PBXGroup;
+			children = (
+				E2A2A8D1273E5BBA00E1648A /* Kitty_blink */,
+				E2A2A8E8273E5BBC00E1648A /* Kitty_blinkTests */,
+				E2A2A8F3273E5BBC00E1648A /* Kitty_blinkUITests */,
+				E2A2A8D0273E5BBA00E1648A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E2A2A8D0273E5BBA00E1648A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E2A2A8CF273E5BBA00E1648A /* Kitty_blink.app */,
+				E2A2A8E5273E5BBC00E1648A /* Kitty_blinkTests.xctest */,
+				E2A2A8F0273E5BBC00E1648A /* Kitty_blinkUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E2A2A8D1273E5BBA00E1648A /* Kitty_blink */ = {
+			isa = PBXGroup;
+			children = (
+				E2A2A8D2273E5BBA00E1648A /* AppDelegate.swift */,
+				E2A2A8D4273E5BBA00E1648A /* SceneDelegate.swift */,
+				E2A2A8D6273E5BBA00E1648A /* ViewController.swift */,
+				E2A2A8D8273E5BBA00E1648A /* Main.storyboard */,
+				E2A2A8DB273E5BBC00E1648A /* Assets.xcassets */,
+				E2A2A8DD273E5BBC00E1648A /* LaunchScreen.storyboard */,
+				E2A2A8E0273E5BBC00E1648A /* Info.plist */,
+			);
+			path = Kitty_blink;
+			sourceTree = "<group>";
+		};
+		E2A2A8E8273E5BBC00E1648A /* Kitty_blinkTests */ = {
+			isa = PBXGroup;
+			children = (
+				E2A2A8E9273E5BBC00E1648A /* Kitty_blinkTests.swift */,
+				E2A2A8EB273E5BBC00E1648A /* Info.plist */,
+			);
+			path = Kitty_blinkTests;
+			sourceTree = "<group>";
+		};
+		E2A2A8F3273E5BBC00E1648A /* Kitty_blinkUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E2A2A8F4273E5BBC00E1648A /* Kitty_blinkUITests.swift */,
+				E2A2A8F6273E5BBC00E1648A /* Info.plist */,
+			);
+			path = Kitty_blinkUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E2A2A8CE273E5BBA00E1648A /* Kitty_blink */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2A2A8F9273E5BBC00E1648A /* Build configuration list for PBXNativeTarget "Kitty_blink" */;
+			buildPhases = (
+				E2A2A8CB273E5BBA00E1648A /* Sources */,
+				E2A2A8CC273E5BBA00E1648A /* Frameworks */,
+				E2A2A8CD273E5BBA00E1648A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Kitty_blink;
+			productName = Kitty_blink;
+			productReference = E2A2A8CF273E5BBA00E1648A /* Kitty_blink.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E2A2A8E4273E5BBC00E1648A /* Kitty_blinkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2A2A8FC273E5BBC00E1648A /* Build configuration list for PBXNativeTarget "Kitty_blinkTests" */;
+			buildPhases = (
+				E2A2A8E1273E5BBC00E1648A /* Sources */,
+				E2A2A8E2273E5BBC00E1648A /* Frameworks */,
+				E2A2A8E3273E5BBC00E1648A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E2A2A8E7273E5BBC00E1648A /* PBXTargetDependency */,
+			);
+			name = Kitty_blinkTests;
+			productName = Kitty_blinkTests;
+			productReference = E2A2A8E5273E5BBC00E1648A /* Kitty_blinkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E2A2A8EF273E5BBC00E1648A /* Kitty_blinkUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2A2A8FF273E5BBC00E1648A /* Build configuration list for PBXNativeTarget "Kitty_blinkUITests" */;
+			buildPhases = (
+				E2A2A8EC273E5BBC00E1648A /* Sources */,
+				E2A2A8ED273E5BBC00E1648A /* Frameworks */,
+				E2A2A8EE273E5BBC00E1648A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E2A2A8F2273E5BBC00E1648A /* PBXTargetDependency */,
+			);
+			name = Kitty_blinkUITests;
+			productName = Kitty_blinkUITests;
+			productReference = E2A2A8F0273E5BBC00E1648A /* Kitty_blinkUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E2A2A8C7273E5BBA00E1648A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					E2A2A8CE273E5BBA00E1648A = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					E2A2A8E4273E5BBC00E1648A = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = E2A2A8CE273E5BBA00E1648A;
+					};
+					E2A2A8EF273E5BBC00E1648A = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = E2A2A8CE273E5BBA00E1648A;
+					};
+				};
+			};
+			buildConfigurationList = E2A2A8CA273E5BBA00E1648A /* Build configuration list for PBXProject "Kitty_blink" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E2A2A8C6273E5BBA00E1648A;
+			productRefGroup = E2A2A8D0273E5BBA00E1648A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E2A2A8CE273E5BBA00E1648A /* Kitty_blink */,
+				E2A2A8E4273E5BBC00E1648A /* Kitty_blinkTests */,
+				E2A2A8EF273E5BBC00E1648A /* Kitty_blinkUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E2A2A8CD273E5BBA00E1648A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2A2A8DF273E5BBC00E1648A /* LaunchScreen.storyboard in Resources */,
+				E2A2A8DC273E5BBC00E1648A /* Assets.xcassets in Resources */,
+				E2A2A8DA273E5BBA00E1648A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2A2A8E3273E5BBC00E1648A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2A2A8EE273E5BBC00E1648A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E2A2A8CB273E5BBA00E1648A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2A2A8D7273E5BBA00E1648A /* ViewController.swift in Sources */,
+				E2A2A8D3273E5BBA00E1648A /* AppDelegate.swift in Sources */,
+				E2A2A8D5273E5BBA00E1648A /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2A2A8E1273E5BBC00E1648A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2A2A8EA273E5BBC00E1648A /* Kitty_blinkTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2A2A8EC273E5BBC00E1648A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2A2A8F5273E5BBC00E1648A /* Kitty_blinkUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E2A2A8E7273E5BBC00E1648A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E2A2A8CE273E5BBA00E1648A /* Kitty_blink */;
+			targetProxy = E2A2A8E6273E5BBC00E1648A /* PBXContainerItemProxy */;
+		};
+		E2A2A8F2273E5BBC00E1648A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E2A2A8CE273E5BBA00E1648A /* Kitty_blink */;
+			targetProxy = E2A2A8F1273E5BBC00E1648A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E2A2A8D8273E5BBA00E1648A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E2A2A8D9273E5BBA00E1648A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E2A2A8DD273E5BBC00E1648A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E2A2A8DE273E5BBC00E1648A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E2A2A8F7273E5BBC00E1648A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E2A2A8F8273E5BBC00E1648A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E2A2A8FA273E5BBC00E1648A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 22VH85C4J3;
+				INFOPLIST_FILE = Kitty_blink/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "AppCrafter.Kitty-blink";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E2A2A8FB273E5BBC00E1648A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 22VH85C4J3;
+				INFOPLIST_FILE = Kitty_blink/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "AppCrafter.Kitty-blink";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E2A2A8FD273E5BBC00E1648A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 22VH85C4J3;
+				INFOPLIST_FILE = Kitty_blinkTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "AppCrafter.Kitty-blinkTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kitty_blink.app/Kitty_blink";
+			};
+			name = Debug;
+		};
+		E2A2A8FE273E5BBC00E1648A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 22VH85C4J3;
+				INFOPLIST_FILE = Kitty_blinkTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "AppCrafter.Kitty-blinkTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kitty_blink.app/Kitty_blink";
+			};
+			name = Release;
+		};
+		E2A2A900273E5BBC00E1648A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 22VH85C4J3;
+				INFOPLIST_FILE = Kitty_blinkUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "AppCrafter.Kitty-blinkUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Kitty_blink;
+			};
+			name = Debug;
+		};
+		E2A2A901273E5BBC00E1648A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 22VH85C4J3;
+				INFOPLIST_FILE = Kitty_blinkUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "AppCrafter.Kitty-blinkUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Kitty_blink;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E2A2A8CA273E5BBA00E1648A /* Build configuration list for PBXProject "Kitty_blink" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2A2A8F7273E5BBC00E1648A /* Debug */,
+				E2A2A8F8273E5BBC00E1648A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E2A2A8F9273E5BBC00E1648A /* Build configuration list for PBXNativeTarget "Kitty_blink" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2A2A8FA273E5BBC00E1648A /* Debug */,
+				E2A2A8FB273E5BBC00E1648A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E2A2A8FC273E5BBC00E1648A /* Build configuration list for PBXNativeTarget "Kitty_blinkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2A2A8FD273E5BBC00E1648A /* Debug */,
+				E2A2A8FE273E5BBC00E1648A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E2A2A8FF273E5BBC00E1648A /* Build configuration list for PBXNativeTarget "Kitty_blinkUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2A2A900273E5BBC00E1648A /* Debug */,
+				E2A2A901273E5BBC00E1648A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E2A2A8C7273E5BBA00E1648A /* Project object */;
+}
