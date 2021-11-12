@@ -9,10 +9,18 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var kittyArray = [Kitty]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         
+        loadJSON {
+            print("JSON Loaded")
+        }
+    
+
+    func loadJSON (completed: @escaping () -> ()) {
+    
         let urlString = "https://api.thecatapi.com/v1/images/search?limit=5"
         
         let url = URL(string: urlString)
@@ -32,10 +40,13 @@ class ViewController: UIViewController {
                 
                 do{
                     
-                let myKitty = try decoder.decode([Kitty].self, from: data!)
+                    self.kittyArray = try decoder.decode([Kitty].self, from: data!)
                     
-                    print(myKitty)
-                    
+                    print(self.kittyArray)
+                    DispatchQueue.main.async{
+                        completed()
+                    }
+                
                 }
                 catch {
                     print("Error JSON")
@@ -45,4 +56,5 @@ class ViewController: UIViewController {
         
         dataTask.resume()
     }
+}
 }
