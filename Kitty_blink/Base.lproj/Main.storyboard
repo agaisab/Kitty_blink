@@ -19,41 +19,6 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Guc-dV-w3W">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="200" id="lfa-Gz-jvU">
-                                        <rect key="frame" x="0.0" y="24.5" width="414" height="200"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lfa-Gz-jvU" id="x8R-1p-hSS">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Mw2-75-X6Q">
-                                                    <rect key="frame" x="30" y="11" width="234" height="178"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="234" id="E0y-wp-UaA"/>
-                                                        <constraint firstAttribute="width" secondItem="Mw2-75-X6Q" secondAttribute="height" multiplier="117:89" id="dnE-St-Yef"/>
-                                                    </constraints>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7q6-eG-LK9">
-                                                    <rect key="frame" x="274" y="85" width="110" height="30"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="30" id="0Wj-jz-bY6"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                                    <nil key="textColor"/>
-                                                    <color key="highlightedColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstAttribute="trailingMargin" secondItem="7q6-eG-LK9" secondAttribute="trailing" constant="10" id="8Vv-mG-iCS"/>
-                                                <constraint firstItem="Mw2-75-X6Q" firstAttribute="centerY" secondItem="x8R-1p-hSS" secondAttribute="centerY" id="Leq-oF-A6J"/>
-                                                <constraint firstItem="Mw2-75-X6Q" firstAttribute="leading" secondItem="x8R-1p-hSS" secondAttribute="leadingMargin" constant="10" id="Oq7-S9-xfN"/>
-                                                <constraint firstItem="7q6-eG-LK9" firstAttribute="centerY" secondItem="x8R-1p-hSS" secondAttribute="centerY" id="WXN-7N-MZk"/>
-                                                <constraint firstItem="7q6-eG-LK9" firstAttribute="leading" secondItem="Mw2-75-X6Q" secondAttribute="trailing" constant="10" id="lZ6-Dy-b7H"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>

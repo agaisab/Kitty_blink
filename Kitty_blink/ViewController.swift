@@ -7,9 +7,12 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+ 
+    
     @IBOutlet weak var kittyTable: UITableView!
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var labelView: UILabel!
     
     var kittyArray = [Kitty]()
 
@@ -17,9 +20,14 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         loadJSON {
-            print("JSON Loaded")
+            self.kittyTable.reloadData()
         }
+        
+        kittyTable.delegate = self
+        kittyTable.dataSource = self
+    
     }
+        
     
     func loadJSON (completed: @escaping () -> ()) {
     
@@ -57,6 +65,15 @@ class ViewController: UIViewController {
         
         dataTask.resume()
     }
-        
-}
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return kittyArray.count
+    }
 
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = UITableViewCell(style: .default, reuseIdentifier: nil)
+        cell.textLabel?.text = kittyArray[indexPath.row].id.capitalized
+        return cell
+    }
+    
+}
