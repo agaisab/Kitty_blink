@@ -46,7 +46,6 @@ class ViewController: UIViewController {
                     DispatchQueue.main.async{
                         completed()
                     }
-                
                 }
                 catch {
                     print("Error JSON")
