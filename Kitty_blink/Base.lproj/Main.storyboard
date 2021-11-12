@@ -65,6 +65,9 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Guc-dV-w3W" secondAttribute="bottom" id="uXS-Dd-BX5"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="kittyTable" destination="Guc-dV-w3W" id="732-M8-Rob"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

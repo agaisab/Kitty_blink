@@ -9,16 +9,18 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    var kittyArray = [Kitty]()
+    @IBOutlet weak var kittyTable: UITableView!
     
+    var kittyArray = [Kitty]()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
         loadJSON {
             print("JSON Loaded")
         }
+    }
     
-
     func loadJSON (completed: @escaping () -> ()) {
     
         let urlString = "https://api.thecatapi.com/v1/images/search?limit=5"
@@ -55,5 +57,6 @@ class ViewController: UIViewController {
         
         dataTask.resume()
     }
+        
 }
-}
+
