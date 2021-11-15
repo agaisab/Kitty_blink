@@ -10,19 +10,30 @@ import UIKit
 class ViewController: UIViewController {
  
     var kittyArray = [Kitty]()
-    
+    var errorJSON = ""
+
     @IBOutlet weak var kittyTable: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        loadJSON {
-            self.kittyTable.reloadData()
-        }
-        
         kittyTable.dataSource = self
+        
+        fireLoadJSON()
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 20.0 , execute: fireLoadJSON)
     }
+
     
+    
+ // FUNCIONS :
+    
+func fireLoadJSON(){
+    loadJSON {
+            self.kittyTable.reloadData()
+    }
+}
+    
+     
 func loadJSON (completed: @escaping () -> ()) {
   
       let urlString = "https://api.thecatapi.com/v1/images/search?limit=5"
@@ -33,8 +44,7 @@ func loadJSON (completed: @escaping () -> ()) {
       }
       
       let session = URLSession.shared
-      
-      let dataTask = session.dataTask(with: url!) { data, response, error in
+      let dataTask = session.dataTask(with: url!) { [self] data, response, error in
           
           if error == nil && data != nil {
               
@@ -42,23 +52,31 @@ func loadJSON (completed: @escaping () -> ()) {
               
               let decoder = JSONDecoder()
               
-              do{
+              do {
                   
                   self.kittyArray = try decoder.decode([Kitty].self, from: data!)
-                  
                   print(self.kittyArray)
                   DispatchQueue.main.async{
                       completed()
                   }
               }
               catch {
-                  print("Error JSON")
+                
+            // Information for error and when it is a case, reloaded JSON.
+                self.errorJSON = "Error JSON"
+                print(self.errorJSON)
+                errorJSON = ""
+                fireLoadJSON()
               }
           }
       }
       dataTask.resume()
-  }
-}
+   
+    }
+    }
+
+//MARK: Extension of ViewControler to make custom cell.
+
 
 extension ViewController: UITableViewDataSource{
     
@@ -73,9 +91,6 @@ extension ViewController: UITableViewDataSource{
         cell.kittyLbl.text = mykitty.id
         cell.kittyImgView.loadIMG(url: mykitty.url)
         
-        
-    
-
         return cell
     }
     }
