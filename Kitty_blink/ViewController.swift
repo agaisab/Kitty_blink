@@ -11,8 +11,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
  
     
     @IBOutlet weak var kittyTable: UITableView!
-    @IBOutlet weak var imageView: UIImageView!
-    @IBOutlet weak var labelView: UILabel!
+
     
     var kittyArray = [Kitty]()
 
@@ -73,6 +72,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: .default, reuseIdentifier: nil)
         cell.textLabel?.text = kittyArray[indexPath.row].id.capitalized
+        
+        
         return cell
     }
     
