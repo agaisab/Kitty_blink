@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E25D007F2740457F000C918F /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25D007E2740457F000C918F /* CustomTableViewCell.swift */; };
+		E2891CA727425B60006554D4 /* ImageURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2891CA627425B60006554D4 /* ImageURL.swift */; };
 		E2A2A8D3273E5BBA00E1648A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A2A8D2273E5BBA00E1648A /* AppDelegate.swift */; };
 		E2A2A8D5273E5BBA00E1648A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A2A8D4273E5BBA00E1648A /* SceneDelegate.swift */; };
 		E2A2A8D7273E5BBA00E1648A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A2A8D6273E5BBA00E1648A /* ViewController.swift */; };
@@ -38,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		E25D007E2740457F000C918F /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		E2891CA627425B60006554D4 /* ImageURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageURL.swift; sourceTree = "<group>"; };
 		E2A2A8CF273E5BBA00E1648A /* Kitty_blink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kitty_blink.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2A2A8D2273E5BBA00E1648A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2A2A8D4273E5BBA00E1648A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				E2A2A8DD273E5BBC00E1648A /* LaunchScreen.storyboard */,
 				E2A2A8E0273E5BBC00E1648A /* Info.plist */,
 				E25D007E2740457F000C918F /* CustomTableViewCell.swift */,
+				E2891CA627425B60006554D4 /* ImageURL.swift */,
 			);
 			path = Kitty_blink;
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 				E2A2A8D7273E5BBA00E1648A /* ViewController.swift in Sources */,
 				E25D007F2740457F000C918F /* CustomTableViewCell.swift in Sources */,
 				E2A2A909273E835C00E1648A /* Kitty.swift in Sources */,
+				E2891CA727425B60006554D4 /* ImageURL.swift in Sources */,
 				E2A2A8D3273E5BBA00E1648A /* AppDelegate.swift in Sources */,
 				E2A2A8D5273E5BBA00E1648A /* SceneDelegate.swift in Sources */,
 			);
