@@ -7,11 +7,9 @@
 
 import UIKit
 
-class CustomTableViewCell: UITableView {
-    
-    @IBOutlet weak var KittyCustomCell: UIView!
-    @IBOutlet weak var iconImageView: UIImageView!
-    @IBOutlet weak var label: UILabel!
+class CustomTableViewCell: UITableViewCell {
 
-
+    @IBOutlet weak var kittyView: UIView!
+    @IBOutlet weak var kittyImgView: UIImageView!
+    @IBOutlet weak var kittyLbl: UILabel!
 }

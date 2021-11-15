@@ -10,8 +10,8 @@ import Foundation
 struct Kitty: Codable {
     
     var breeds : [Int]
-    var id : String = ""
-    var url : String = ""
+    var id : String = "Test"
+    var url : String = "Test"
     var width : Int = 0
     var height : Int = 0
 
