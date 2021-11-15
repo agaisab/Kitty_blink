@@ -11,23 +11,33 @@ class ViewController: UIViewController {
  
     var kittyArray = [Kitty]()
     var errorJSON = ""
-
+    
     @IBOutlet weak var kittyTable: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         kittyTable.dataSource = self
-        
         fireLoadJSON()
-        
-        DispatchQueue.main.asyncAfter(deadline: .now() + 20.0 , execute: fireLoadJSON)
+        // Time Delay for next data package
+        DispatchQueue.main.asyncAfter(deadline: .now() + 19 , execute: updateJSON)
     }
-
-    
     
  // FUNCIONS :
     
-func fireLoadJSON(){
+    //Timer
+    func updateJSON() {
+        let timer = Timer.scheduledTimer(
+            timeInterval: 19,
+            target: self,
+            selector: #selector(fireLoadJSON),
+            userInfo: nil,
+            repeats: true)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1 , execute: {
+            timer.fire()
+        })
+    }
+    
+@ objc func fireLoadJSON(){
     loadJSON {
             self.kittyTable.reloadData()
     }
