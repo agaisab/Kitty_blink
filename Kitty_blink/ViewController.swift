@@ -21,9 +21,8 @@ class ViewController: UIViewController {
         }
         
         kittyTable.dataSource = self
-    
     }
-
+    
 func loadJSON (completed: @escaping () -> ()) {
   
       let urlString = "https://api.thecatapi.com/v1/images/search?limit=5"
@@ -57,7 +56,6 @@ func loadJSON (completed: @escaping () -> ()) {
               }
           }
       }
-      
       dataTask.resume()
   }
 }
@@ -72,12 +70,16 @@ extension ViewController: UITableViewDataSource{
         let cell = kittyTable.dequeueReusableCell(withIdentifier: "kittyCell") as! CustomTableViewCell
         let mykitty = kittyArray[indexPath.row]
         
-        
         cell.kittyLbl.text = mykitty.id
-        cell.kittyImgView.image = UIImage(named: mykitty.url)
+        cell.kittyImgView.loadIMG(url: mykitty.url)
         
+        
+    
+
         return cell
     }
     }
+
+
     
     

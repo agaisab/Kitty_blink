@@ -6,12 +6,13 @@
 //
 
 import Foundation
+import UIKit
 
 struct Kitty: Codable {
     
     var breeds : [Int]
-    var id : String = "Test"
-    var url : String = "Test"
+    var id : String = ""
+    var url : URL
     var width : Int = 0
     var height : Int = 0
 
